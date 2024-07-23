@@ -1,0 +1,8 @@
+---
+source: tests/requests/users.rs
+expression: "(users.status_code(), users.text())"
+---
+(
+    200,
+    "{\"id\":ID,\"name\":\"user1\",\"email\":\"user1@example.com\"}",
+)
